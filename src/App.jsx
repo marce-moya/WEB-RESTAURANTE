@@ -1,11 +1,12 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from './Pages/Home.jsx';
-import Contacto from './Pages/Contacto.jsx';
-import Blog from './Pages/Blog.jsx';
-import Menu from './Pages/Menu.jsx';
-import Retirar from './Pages/Retirar.jsx';
-import NavbarComponent from './Components/NavbarComponent.jsx';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from '.src/Pages/Home.jsx'
+import Contacto from '.src/Pages/Contacto.jsx'
+import Blog from '.src/Pages/Blog.jsx'
+import Menu from '.src/Pages/Menu.jsx'
+import Retirar from '.src/Pages/Retirar.jsx'
+import NavbarComponent from '.src/Components/NavbarComponent.jsx'
+import Footer from '.src/Components/Footer.jsx'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Menu" element={<Menu />} />
           <Route path="/Retirar" element={<Retirar />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
