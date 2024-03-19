@@ -1,30 +1,48 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import NavbarComponent from '../Components/NavbarComponent'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Home = () => {
+  const customFontStyle = {
+    fontFamily: "'OratorStd', sans-serif"
+  };
+
   return (
-    <Container>
-      <Row className="mt-4">
-        <Col>
-          <h2>Bienvenido a nuestro restaurante</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nunc eget urna lobortis luctus. Donec vitae condimentum lacus. Cras sit amet fermentum ex, id aliquet odio. Nulla facilisi. Nulla ac lacus eget sapien consequat bibendum. Quisque non augue vel mi malesuada ullamcorper. 
-          </p>
-        </Col>
-        <Col>
-          <Image src="Home 1.png" fluid />
-        </Col>
-      </Row>
-      <Row className="mt-4">
-        <Col>
-          <Image src="Home 3.png" fluid />
-        </Col>
-      </Row>
-    </Container>
+    <div>
+    
+      
+        <div style={{ backgroundColor: '#000', color: '#fff', width: 'auto', height: 'auto', marginTop: 0 }}>
+          <Container className="bg-dark text-light" style={customFontStyle}>
+            <Row className="mt-4 align-items-center">
+              <Col xs={12} md={6} className="text-center">
+                <h2 className="mb-4">Bienvenido a Empanadas de la Casa</h2>
+                <p className="mb-4 text-justify">
+                  El destino definitivo para los amantes de las empanadas en Concón!
+
+                  Sumérgete en la experiencia gastronómica mientras te deleitas con nuestras exquisitas empanadas fritas, preparadas con los sabores más auténticos de la región de Valparaíso, Chile. Desde la calidez y autenticidad de nuestra cocina casera hasta la frescura de nuestros ingredientes locales, cada bocado es una explosión de sabores que te transportará a las tradiciones culinarias de nuestra región.
+
+                  Nuestra pasión por la comida se fusiona con el encanto pintoresco de Concón, Con su impresionante belleza natural y su rica historia gastronómica.
+
+                  Desde empanadas rellenas de suculentos mariscos frescos capturados en las aguas del Pacífico hasta opciones más tradicionales como carne, queso, y vegetales, nuestra variedad de sabores y rellenos es incomparable. Cada empanada está cuidadosamente elaborada con ingredientes frescos y de la más alta calidad, garantizando una experiencia gastronómica inolvidable en cada visita.
+
+                  ¡Te esperamos!
+                </p>
+              </Col>
+              <Col>
+                <Image src="Home 1.png" fluid style={{ width: '50%', height: 'auto' }} />
+              </Col>
+            </Row>
+            <Row className="mt-4 justify-content-center align-items-center">
+              <Col>
+                <Image src="Home 3.png" fluid style={{ width: 150, height: 150, margin: 'auto', display: 'block' }} />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      
+    </div>
   );
 };
 
-export default Home
+export default Home;

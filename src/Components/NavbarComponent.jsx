@@ -10,18 +10,26 @@ import {Routes, Route} from 'react-router-dom'
 const NavbarComponent = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className="mb-0">
         <Container>
           
           <Navbar.Brand>
             <img
               src={Logo}
-              height="30"
+              height="150"
+              width="150"
               className="d-inline-block align-top"
               alt="Logo"
             />
-            {' Navbar Logo'}
+            
           </Navbar.Brand>
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Contacto">Contacto</Nav.Link>
+            <Nav.Link href="/Menu">Menú</Nav.Link>
+            <Nav.Link href="/Retirar">Retirar</Nav.Link>
+            <Nav.Link href="/Blog">Blog</Nav.Link>
+          </Nav>
 
           <Routes className="me-auto">
             <Route as={Link} to="/">Home</Route>
