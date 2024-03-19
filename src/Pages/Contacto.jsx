@@ -20,9 +20,9 @@ function Contacto() {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit}className="bg-dark text-light p-5">
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalNombre">
-        <Form.Label column sm={2}>
+        <Form.Label column sm={2}className="text-light">
           Nombre
         </Form.Label>
         <Col sm={10}>
@@ -59,7 +59,7 @@ function Contacto() {
 
       <Form.Group as={Row} className="mb-3">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Button type="submit">Enviar</Button>
+          <Button type="submit" variant="warning">Enviar</Button>
         </Col>
       </Form.Group>
     </Form>
