@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '.src/Pages/Home.jsx'
-import Contacto from '.src/Pages/Contacto.jsx'
-import Blog from '.src/Pages/Blog.jsx'
-import Menu from '.src/Pages/Menu.jsx'
-import Retirar from '.src/Pages/Retirar.jsx'
-import NavbarComponent from '.src/Components/NavbarComponent.jsx'
-import Footer from '.src/Components/Footer.jsx'
+import Home from './Pages/Home'
+import Contacto from './Pages/Contacto'
+import Blog from './Pages/Blog'
+import Menu from './Pages/Menu'
+import Retirar from './Pages/Retirar'
+import NavbarComponent from './Components/NavbarComponent'
+import Footer from './Components/Footer.jsx'
 
 function App() {
   return (
