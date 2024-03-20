@@ -13,8 +13,9 @@ const Retirar = () => {
 
 
   return (
-     <Container>
-      <Row className="mt-4">
+    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh' }}>
+      <Container className="my-4">
+        <Row className="mt-4">
         <Col md={6}>
           <ProductSelectionForm onAddToCart={addToCart} />
         </Col>
@@ -23,6 +24,7 @@ const Retirar = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
 export default Retirar
