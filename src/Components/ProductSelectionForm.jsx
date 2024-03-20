@@ -32,28 +32,28 @@ const ProductSelectionForm = ({ onAddToCart }) => {
           Selecciona un producto:
           <select value={selectedProduct} onChange={handleProductChange}>
             <option value="">Selecciona...</option>
-            <option value="Producto 1">Vegana No Carne</option>
-            <option value="Producto 2">Tradicional Surtido de Mariscos</option>
-            <option value="Producto 3">Tradicional Queso</option>
-            <option value="Producto 4">Tradicional Pino de Loco</option>
-            <option value="Producto 5">Tradicional Pino de Carne</option>
-            <option value="Producto 6">Tradicional Ostión Queso</option>
-            <option value="Producto 7">Tradicional Jamón Queso</option>
-            <option value="Producto 8">Tradicional Champiñon Queso</option>
-            <option value="Producto 9">Tradicional Camarón Queso</option>
-            <option value="Producto 10">Tradicional Aceituna Queso</option>
-            <option value="Producto 11">Nueva Mechada Queso</option>
-            <option value="Producto 12">Nueva Chupe de Loco</option>
-            <option value="Producto 13">Chupe de Jaiba</option>
-            <option value="Producto 14">Capresse</option>
-            <option value="Producto 15">Bebida Piña</option>
-            <option value="Producto 16">Bebida Pepsi</option>
-            <option value="Producto 17">Bebida Pepsi Zero</option>
-            <option value="Producto 18">Bebida Limón Soda</option>
-            <option value="Producto 19">Bebida Durazno</option>
-            <option value="Producto 20">Bebida Canada</option>
-            <option value="Producto 21">Bebida Agua sin Gas</option>
-            <option value="Producto 22">Bebida con Gas</option>
+            <option value="Vegana No Carne">Vegana No Carne</option>
+            <option value="Surtido de Mariscos">Tradicional Surtido de Mariscos</option>
+            <option value="Queso">Tradicional Queso</option>
+            <option value="Pino (Loco)">Tradicional Pino de Loco</option>
+            <option value="Pino (Carne)">Tradicional Pino de Carne</option>
+            <option value="Ostión Queso">Tradicional Ostión Queso</option>
+            <option value="Jamón Queso">Tradicional Jamón Queso</option>
+            <option value="Champiñón Queso">Tradicional Champiñon Queso</option>
+            <option value="Camarón Queso">Tradicional Camarón Queso</option>
+            <option value="Aceituna Queso">Tradicional Aceituna Queso</option>
+            <option value="Carne Mechada Queso">Nueva Mechada Queso</option>
+            <option value="Chupe de Loco">Nueva Chupe de Loco</option>
+            <option value="Chupe de Jaiba">Chupe de Jaiba</option>
+            <option value="Capresse">Capresse</option>
+            <option value="Jugo de Piña embotellado">Bebida Piña</option>
+            <option value="Pepsi en lata">Bebida Pepsi</option>
+            <option value="Pepsi Zero en lata">Bebida Pepsi Zero</option>
+            <option value="Limón Soda en lata">Bebida Limón Soda</option>
+            <option value="Jugo de Durazno enbotellado">Bebida Durazno</option>
+            <option value="Canada Dry en lata">Bebida Canada</option>
+            <option value="Agua mineral sin gas">Bebida Agua sin Gas</option>
+            <option value="Agua mineral con gas">Bebida con Gas</option>
             
           </select>
         </label>
