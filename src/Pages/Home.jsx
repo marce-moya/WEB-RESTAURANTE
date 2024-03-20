@@ -12,7 +12,7 @@ const Home = () => {
     <div>
     
       
-        <div style={{ backgroundColor: '#000', color: '#fff', width: 'auto', height: 'auto', marginTop: '0',paddingTop: '20px' }}>
+        <div style={{ backgroundColor: 'black', color: '#fff', width: 'auto', height: 'auto', marginTop: '0',paddingTop: '20px' }}>
           <Container className="bg-dark text-light" style={customFontStyle}>
             <Row className="mt-4 align-items-center">
               <Col xs={12} md={6} className="text-center">

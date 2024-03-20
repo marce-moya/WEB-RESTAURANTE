@@ -165,15 +165,15 @@
     ];
   
     return (
-      <Row xs={1} md={3} className="g-4">
+      <Row xs={1} md={3} className="g-4" style={{ backgroundColor: '#000' }}>
         {menuItems.map((item) => (
           <Col key={item.id}>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', backgroundColor: '#000', color: '#fff' }}>
               <Card.Img variant="top" src={item.imageSrc} style={{ height: '200px', objectFit: 'cover' }} />
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
-                <Button variant="dark">Agregar al carrito</Button>
+                <Button variant="warning">Agregar al carrito</Button>
               </Card.Body>
             </Card>
           </Col>
