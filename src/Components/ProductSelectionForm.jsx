@@ -10,27 +10,28 @@ const ProductSelectionForm = ({ onAddToCart }) => {
     setSelectedProduct(event.target.value);
   };
 
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
- 
+
     if (selectedProduct) {
-      
+
       onAddToCart(selectedProduct); //para enviar la info del producto al padre
-      
+
       setSelectedProduct('');
     } else {
-      
+
       alert('Por favor selecciona un producto antes de agregarlo al carrito');
     }
   };
 
   return (
     <div>
-      <h2>Selecciona un Producto</h2>
+      <h1 style={{ fontFamily: 'fantasy', color: 'orange' }}>Elige tus Empanadas para retiro en local</h1>
+      <h4 style={{ fontFamily: 'fantasy', color: 'orange' }}>¡No olvides agregar tu bebida o Agua mineral!</h4>
       <form onSubmit={handleSubmit}>
-        <label>
-          Selecciona un producto:
+        <label style={{ fontFamily: 'Arial, sans-serif', color: 'white', fontWeight: 'bold' }}>
+          Selecciona desde el listado:
           <select value={selectedProduct} onChange={handleProductChange}>
             <option value="">Selecciona...</option>
             <option value="Vegana No Carne">Vegana No Carne</option>
@@ -55,10 +56,10 @@ const ProductSelectionForm = ({ onAddToCart }) => {
             <option value="Canada Dry en lata">Canada Dry en lata</option>
             <option value="Agua mineral sin gas">Agua mineral sin gas</option>
             <option value="Agua mineral con gas">Agua mineral con gas</option>
-            
+
           </select>
         </label>
-        <button type="submit">Agregar al Carrito</button>
+        <button type="submit" style={{ backgroundColor: 'orange', color: 'black', fontWeight: 'bold', fontFamily: 'Arial, sans-serif', padding: '10px', borderRadius: '5px', border: 'none' }}>Agregar al Carrito</button>
       </form>
     </div>
   );

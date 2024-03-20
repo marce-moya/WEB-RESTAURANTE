@@ -10,10 +10,10 @@ import {Routes, Route} from 'react-router-dom'
 const NavbarComponent = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" className="mb-0">
+      <Navbar bg="dark" variant="dark" className="mb-0" style={{ fontFamily: 'Arial, sans-serif', fontSize: '24px' }}>
         <Container>
           
-          <Navbar.Brand>
+          <Navbar.Brand >
             <img
               src={Logo}
               height="150"
@@ -24,11 +24,11 @@ const NavbarComponent = () => {
             
           </Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/Contacto">Contacto</Nav.Link>
-            <Nav.Link href="/Menu">Menú</Nav.Link>
-            <Nav.Link href="/Retirar">Retirar</Nav.Link>
-            <Nav.Link href="/Blog">Blog</Nav.Link>
+            <Nav.Link as={Link} to={"/"}style={{ color: 'orange' }}>Home</Nav.Link>
+            <Nav.Link as={Link} to={"/Contacto"}style={{ color: 'orange' }}>Contacto</Nav.Link>
+            <Nav.Link as={Link} to={"/Menu"}style={{ color: 'orange' }}>Menú</Nav.Link>
+            <Nav.Link as={Link} to={"/Retirar"}style={{ color: 'orange' }}>Retirar</Nav.Link>
+            <Nav.Link as={Link} to={"/Blog"}style={{ color: 'orange' }}>Blog</Nav.Link>
           </Nav>
 
           <Routes className="me-auto">
@@ -40,6 +40,7 @@ const NavbarComponent = () => {
           </Routes>
         </Container>
       </Navbar>
+
     </div>
   );
 };

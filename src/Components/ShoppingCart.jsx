@@ -5,7 +5,7 @@ import React from 'react';
 
   return (
     <div>
-      <h2>Carrito de Compras</h2>
+      <h1 style={{ fontFamily: 'fantasy', color: 'orange' }}>Productos reservados:</h1>
       <ul>
         {cartItems.map((item, index) => (
           <li key={index}>{item}</li>
