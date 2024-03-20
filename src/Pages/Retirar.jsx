@@ -6,18 +6,23 @@ import ShoppingCart from '../Components/ShoppingCart'
 import ProductSelectionForm from '../Components/ProductSelectionForm' 
 
 const Retirar = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
+
   return (
-    <Container>
+     <Container>
       <Row className="mt-4">
         <Col md={6}>
-          <ProductSelectionForm /> {/* Colocar el formulario de selección de productos en la columna izquierda */}
+          <ProductSelectionForm onAddToCart={addToCart} />
         </Col>
         <Col md={6}>
-          <ShoppingCart /> {/* Colocar el carrito de compras en la columna derecha */}
+          <ShoppingCart cartItems={cartItems} />
         </Col>
       </Row>
     </Container>
   );
 }
-
 export default Retirar

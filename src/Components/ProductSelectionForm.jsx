@@ -1,25 +1,25 @@
 import React, { useState } from 'react'
 
 const ProductSelectionForm = ({ onAddToCart }) => {
-  // Estado para almacenar la selección del usuario
+
   const [selectedProduct, setSelectedProduct] = useState('');
 
-  // Función para manejar el cambio en la selección del usuario
+
   const handleProductChange = (event) => {
     setSelectedProduct(event.target.value);
   };
 
-  // Función para manejar el envío del formulario y agregar el producto seleccionado al carrito
+  
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Verificar si se ha seleccionado un producto
+ 
     if (selectedProduct) {
-      // Llamar a la función onAddToCart y pasar el producto seleccionado
-      onAddToCart(selectedProduct);
-      // Limpiar la selección después de agregar el producto al carrito
+      
+      onAddToCart(selectedProduct); //para enviar la info del producto al padre
+      
       setSelectedProduct('');
     } else {
-      // Mostrar un mensaje de error si no se ha seleccionado ningún producto
+      
       alert('Por favor selecciona un producto antes de agregarlo al carrito');
     }
   };
